@@ -69,8 +69,8 @@
 			
 			
 			if ($_POST['submit'] && $passwd == '010') {
-				if($phonenum=='010')
-					$phonenum='15210594789';
+				//if($phonenum=='010')
+				//	$phonenum='152xxxxxxxx';//my personal phone number.
 				$address = array("$phonenum");
 				send_sms ( '078c4f35601848b317564deae594af3d',mb_convert_encoding ( $message , 'utf-8', 'auto') , $address) ;
 			} else if ($_POST['submit'] && $passwd != '4') {
